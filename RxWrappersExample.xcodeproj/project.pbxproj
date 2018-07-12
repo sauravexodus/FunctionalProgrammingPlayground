@@ -18,6 +18,7 @@
 		215B0BBE20F7C7EC00D9ED94 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 215B0BBD20F7C7EC00D9ED94 /* Button.swift */; };
 		215B0BC020F7CA7D00D9ED94 /* Button+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 215B0BBF20F7CA7D00D9ED94 /* Button+Rx.swift */; };
 		215B0BC220F7CE4D00D9ED94 /* Examples.swift in Sources */ = {isa = PBXBuildFile; fileRef = 215B0BC120F7CE4D00D9ED94 /* Examples.swift */; };
+		215B0BC420F7D7BB00D9ED94 /* UIViewController+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 215B0BC320F7D7BB00D9ED94 /* UIViewController+extensions.swift */; };
 		C582F02BFE561FFF6EED3CB0 /* Pods_RxWrappersExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42EEE277C3E82B0423E705CE /* Pods_RxWrappersExample.framework */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +36,7 @@
 		215B0BBD20F7C7EC00D9ED94 /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
 		215B0BBF20F7CA7D00D9ED94 /* Button+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Button+Rx.swift"; sourceTree = "<group>"; };
 		215B0BC120F7CE4D00D9ED94 /* Examples.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Examples.swift; sourceTree = "<group>"; };
+		215B0BC320F7D7BB00D9ED94 /* UIViewController+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+extensions.swift"; sourceTree = "<group>"; };
 		42EEE277C3E82B0423E705CE /* Pods_RxWrappersExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxWrappersExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		57190F8E4C7AE5761A503B1C /* Pods-RxWrappersExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxWrappersExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RxWrappersExample/Pods-RxWrappersExample.debug.xcconfig"; sourceTree = "<group>"; };
 		98EAF18F84DC88CCD5CE4F20 /* Pods-RxWrappersExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxWrappersExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-RxWrappersExample/Pods-RxWrappersExample.release.xcconfig"; sourceTree = "<group>"; };
@@ -85,6 +87,7 @@
 				215B0BBD20F7C7EC00D9ED94 /* Button.swift */,
 				215B0BBF20F7CA7D00D9ED94 /* Button+Rx.swift */,
 				215B0BC120F7CE4D00D9ED94 /* Examples.swift */,
+				215B0BC320F7D7BB00D9ED94 /* UIViewController+extensions.swift */,
 			);
 			path = RxWrappersExample;
 			sourceTree = "<group>";
@@ -237,6 +240,7 @@
 				211F1F6820F7AFFC00DBAF46 /* AppDelegate.swift in Sources */,
 				215B0BC020F7CA7D00D9ED94 /* Button+Rx.swift in Sources */,
 				211F1F7C20F7BF1500DBAF46 /* ApiRequest.swift in Sources */,
+				215B0BC420F7D7BB00D9ED94 /* UIViewController+extensions.swift in Sources */,
 				211F1F7E20F7C47200DBAF46 /* Facebook+Rx.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

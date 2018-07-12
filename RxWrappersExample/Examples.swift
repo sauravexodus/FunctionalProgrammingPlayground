@@ -48,7 +48,8 @@ extension Examples: ButtonDelegate {
 extension Examples {
     
     func updateUserProfileGood() {
-        LoginManager().rx.logIn(readPermissions: [.email])
+        button.rx.onButtonTapped
+            .flatMapLatest { _ in  LoginManager().rx.logIn(readPermissions: [.email])  }
             .flatMapLatest { _ in GraphRequest(graphPath: "me").rx.start() }
             .flatMapLatest { ApiRequest.updateProfile(profileData: $0).rx.makeRequest() }
             .catchError { error in .just("Some error occured") }
@@ -56,16 +57,8 @@ extension Examples {
                 print("Success!")
             })
             .disposed(by: disposeBag)
-        
     }
     
-    func configureButtonTap() {
-        button.rx.onButtonTapped
-            .subscribe(onNext: { [weak self] _ in
-                self?.updateUserProfileGood()
-            })
-            .disposed(by: disposeBag)
-    }
 }
 
 
