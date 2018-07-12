@@ -12,6 +12,7 @@
 		211F1F6D20F7AFFC00DBAF46 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 211F1F6B20F7AFFC00DBAF46 /* Main.storyboard */; };
 		211F1F6F20F7AFFE00DBAF46 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 211F1F6E20F7AFFE00DBAF46 /* Assets.xcassets */; };
 		211F1F7220F7AFFE00DBAF46 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 211F1F7020F7AFFE00DBAF46 /* LaunchScreen.storyboard */; };
+		C582F02BFE561FFF6EED3CB0 /* Pods_RxWrappersExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42EEE277C3E82B0423E705CE /* Pods_RxWrappersExample.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,9 @@
 		211F1F6E20F7AFFE00DBAF46 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		211F1F7120F7AFFE00DBAF46 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		211F1F7320F7AFFE00DBAF46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		42EEE277C3E82B0423E705CE /* Pods_RxWrappersExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxWrappersExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		57190F8E4C7AE5761A503B1C /* Pods-RxWrappersExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxWrappersExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RxWrappersExample/Pods-RxWrappersExample.debug.xcconfig"; sourceTree = "<group>"; };
+		98EAF18F84DC88CCD5CE4F20 /* Pods-RxWrappersExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxWrappersExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-RxWrappersExample/Pods-RxWrappersExample.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C582F02BFE561FFF6EED3CB0 /* Pods_RxWrappersExample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +45,8 @@
 			children = (
 				211F1F6620F7AFFC00DBAF46 /* RxWrappersExample */,
 				211F1F6520F7AFFC00DBAF46 /* Products */,
+				F7C6A9FCD29427CA8C0F9513 /* Pods */,
+				ACE15C352A55B54B5C6E2F2D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +71,23 @@
 			path = RxWrappersExample;
 			sourceTree = "<group>";
 		};
+		ACE15C352A55B54B5C6E2F2D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				42EEE277C3E82B0423E705CE /* Pods_RxWrappersExample.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F7C6A9FCD29427CA8C0F9513 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				57190F8E4C7AE5761A503B1C /* Pods-RxWrappersExample.debug.xcconfig */,
+				98EAF18F84DC88CCD5CE4F20 /* Pods-RxWrappersExample.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 211F1F7620F7AFFE00DBAF46 /* Build configuration list for PBXNativeTarget "RxWrappersExample" */;
 			buildPhases = (
+				64F870353132F9487A747C95 /* [CP] Check Pods Manifest.lock */,
 				211F1F6020F7AFFC00DBAF46 /* Sources */,
 				211F1F6120F7AFFC00DBAF46 /* Frameworks */,
 				211F1F6220F7AFFC00DBAF46 /* Resources */,
+				DC07272FA491D7AEA4BEB9DD /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +155,57 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		64F870353132F9487A747C95 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RxWrappersExample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DC07272FA491D7AEA4BEB9DD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-RxWrappersExample/Pods-RxWrappersExample-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FacebookCore/FacebookCore.framework",
+				"${BUILT_PRODUCTS_DIR}/FacebookLogin/FacebookLogin.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookLogin.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RxWrappersExample/Pods-RxWrappersExample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		211F1F6020F7AFFC00DBAF46 /* Sources */ = {
@@ -278,6 +355,7 @@
 		};
 		211F1F7720F7AFFE00DBAF46 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 57190F8E4C7AE5761A503B1C /* Pods-RxWrappersExample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -296,6 +374,7 @@
 		};
 		211F1F7820F7AFFE00DBAF46 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 98EAF18F84DC88CCD5CE4F20 /* Pods-RxWrappersExample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
