@@ -49,7 +49,7 @@ extension Examples {
     
     func updateUserProfileGood() {
         button.rx.onButtonTapped
-            .flatMapLatest { _ in  LoginManager().rx.logIn(readPermissions: [.email])  }
+            .flatMapLatest { _ in  LoginManager().rx.logIn(readPermissions: [.email]) }
             .flatMapLatest { _ in GraphRequest(graphPath: "me").rx.start() }
             .flatMapLatest { ApiRequest.updateProfile(profileData: $0).rx.makeRequest() }
             .catchError { error in .just("Some error occured") }
