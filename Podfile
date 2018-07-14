@@ -10,6 +10,7 @@ target 'RxWrappersExample' do
   pod 'RxCocoa'
   pod 'FacebookCore'
   pod 'FacebookLogin'
+  pod 'AccountKit'
 
   # Pods for RxWrappersExample
 

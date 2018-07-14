@@ -121,6 +121,7 @@
 				211F1F6120F7AFFC00DBAF46 /* Frameworks */,
 				211F1F6220F7AFFC00DBAF46 /* Resources */,
 				DC07272FA491D7AEA4BEB9DD /* [CP] Embed Pods Frameworks */,
+				135BADA36591195C741D785D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -178,6 +179,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		135BADA36591195C741D785D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-RxWrappersExample/Pods-RxWrappersExample-resources.sh",
+				"${PODS_ROOT}/AccountKit/AccountKitStrings.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AccountKitStrings.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RxWrappersExample/Pods-RxWrappersExample-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		64F870353132F9487A747C95 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
