@@ -9,14 +9,14 @@
 import Foundation
 import UIKit
 
-protocol ButtonDelegate: class {
-    func onButtonTapped()
+protocol ClickableViewDelegate: class {
+    func onTap()
 }
 
-final class Button: UIView {
+final class ClickableView: UIView {
     
     let label = UILabel()
-    weak var delegate: ButtonDelegate?
+    weak var delegate: ClickableViewDelegate?
     
     // MARK: Init methods
     
@@ -36,7 +36,7 @@ final class Button: UIView {
     // MARK: Instance methods
     
     @objc private func handleTap() {
-        delegate?.onButtonTapped()
+        delegate?.onTap()
     }
     
 }

@@ -14,14 +14,14 @@ import AccountKit
 
 final class Examples {
     private let disposeBag = DisposeBag()
-    private let button = Button()
+    private let clickableView = ClickableView()
     
-    init() { button.delegate = self }
+    init() { clickableView.delegate = self }
 }
 
 // MARK: Bad Implementation
 
-extension Examples: ButtonDelegate {
+extension Examples: ClickableViewDelegate {
     
     func updateUserProfileBad() {
         LoginManager().logIn(readPermissions: [.email]) { (loginResult) in
@@ -39,35 +39,8 @@ extension Examples: ButtonDelegate {
         }
     }
     
-    func onButtonTapped() {
+    func onTap() {
         updateUserProfileBad()
-    }
-    
-}
-
-extension AKFViewController where Self: UIViewController {
-    
-}
-
-extension ViewController: AKFViewControllerDelegate {
-    
-    func setupAccountKit() {
-        let accountKit = AKFAccountKit(responseType: .accessToken)
-        let accountKitViewController = accountKit.viewControllerForPhoneLogin()
-        accountKitViewController.delegate = self
-        present(accountKitViewController, animated: true)
-    }
-    
-    func viewController(_ viewController: (UIViewController & AKFViewController)!, didCompleteLoginWith accessToken: AKFAccessToken!, state: String!) {
-        
-    }
-    
-    func viewController(_ viewController: (UIViewController & AKFViewController)!, didFailWithError error: Error!) {
-        
-    }
-    
-    func viewControllerDidCancel(_ viewController: (UIViewController & AKFViewController)!) {
-        
     }
     
 }
@@ -77,7 +50,7 @@ extension ViewController: AKFViewControllerDelegate {
 extension Examples {
     
     func updateUserProfileGood() {
-        button.rx.onButtonTapped
+        clickableView.rx.onButtonTapped
             .flatMapLatest { _ in  LoginManager().rx.logIn(readPermissions: [.email]) }
             .flatMapLatest { _ in GraphRequest(graphPath: "me").rx.start() }
             .flatMapLatest { ApiRequest.updateProfile(profileData: $0).rx.makeRequest() }

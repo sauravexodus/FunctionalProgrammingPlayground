@@ -15,10 +15,11 @@
 		211F1F7C20F7BF1500DBAF46 /* ApiRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211F1F7B20F7BF1500DBAF46 /* ApiRequest.swift */; };
 		211F1F7E20F7C47200DBAF46 /* Facebook+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211F1F7D20F7C47200DBAF46 /* Facebook+Rx.swift */; };
 		211F1F8020F7C49F00DBAF46 /* ObservableType+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211F1F7F20F7C49F00DBAF46 /* ObservableType+extensions.swift */; };
-		215B0BBE20F7C7EC00D9ED94 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 215B0BBD20F7C7EC00D9ED94 /* Button.swift */; };
+		215B0BBE20F7C7EC00D9ED94 /* ClickableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 215B0BBD20F7C7EC00D9ED94 /* ClickableView.swift */; };
 		215B0BC020F7CA7D00D9ED94 /* Button+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 215B0BBF20F7CA7D00D9ED94 /* Button+Rx.swift */; };
 		215B0BC220F7CE4D00D9ED94 /* Examples.swift in Sources */ = {isa = PBXBuildFile; fileRef = 215B0BC120F7CE4D00D9ED94 /* Examples.swift */; };
 		215B0BC420F7D7BB00D9ED94 /* UIViewController+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 215B0BC320F7D7BB00D9ED94 /* UIViewController+extensions.swift */; };
+		215B0BC820F9BE1700D9ED94 /* Playground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 215B0BC720F9BE1700D9ED94 /* Playground.swift */; };
 		C582F02BFE561FFF6EED3CB0 /* Pods_RxWrappersExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42EEE277C3E82B0423E705CE /* Pods_RxWrappersExample.framework */; };
 /* End PBXBuildFile section */
 
@@ -33,10 +34,11 @@
 		211F1F7B20F7BF1500DBAF46 /* ApiRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiRequest.swift; sourceTree = "<group>"; };
 		211F1F7D20F7C47200DBAF46 /* Facebook+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Facebook+Rx.swift"; sourceTree = "<group>"; };
 		211F1F7F20F7C49F00DBAF46 /* ObservableType+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ObservableType+extensions.swift"; sourceTree = "<group>"; };
-		215B0BBD20F7C7EC00D9ED94 /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
+		215B0BBD20F7C7EC00D9ED94 /* ClickableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClickableView.swift; sourceTree = "<group>"; };
 		215B0BBF20F7CA7D00D9ED94 /* Button+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Button+Rx.swift"; sourceTree = "<group>"; };
 		215B0BC120F7CE4D00D9ED94 /* Examples.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Examples.swift; sourceTree = "<group>"; };
 		215B0BC320F7D7BB00D9ED94 /* UIViewController+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+extensions.swift"; sourceTree = "<group>"; };
+		215B0BC720F9BE1700D9ED94 /* Playground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Playground.swift; sourceTree = "<group>"; };
 		42EEE277C3E82B0423E705CE /* Pods_RxWrappersExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxWrappersExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		57190F8E4C7AE5761A503B1C /* Pods-RxWrappersExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxWrappersExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RxWrappersExample/Pods-RxWrappersExample.debug.xcconfig"; sourceTree = "<group>"; };
 		98EAF18F84DC88CCD5CE4F20 /* Pods-RxWrappersExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxWrappersExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-RxWrappersExample/Pods-RxWrappersExample.release.xcconfig"; sourceTree = "<group>"; };
@@ -84,10 +86,11 @@
 				211F1F7320F7AFFE00DBAF46 /* Info.plist */,
 				211F1F7D20F7C47200DBAF46 /* Facebook+Rx.swift */,
 				211F1F7F20F7C49F00DBAF46 /* ObservableType+extensions.swift */,
-				215B0BBD20F7C7EC00D9ED94 /* Button.swift */,
+				215B0BBD20F7C7EC00D9ED94 /* ClickableView.swift */,
 				215B0BBF20F7CA7D00D9ED94 /* Button+Rx.swift */,
 				215B0BC120F7CE4D00D9ED94 /* Examples.swift */,
 				215B0BC320F7D7BB00D9ED94 /* UIViewController+extensions.swift */,
+				215B0BC720F9BE1700D9ED94 /* Playground.swift */,
 			);
 			path = RxWrappersExample;
 			sourceTree = "<group>";
@@ -254,10 +257,11 @@
 			files = (
 				215B0BC220F7CE4D00D9ED94 /* Examples.swift in Sources */,
 				211F1F8020F7C49F00DBAF46 /* ObservableType+extensions.swift in Sources */,
-				215B0BBE20F7C7EC00D9ED94 /* Button.swift in Sources */,
+				215B0BBE20F7C7EC00D9ED94 /* ClickableView.swift in Sources */,
 				211F1F6A20F7AFFC00DBAF46 /* ViewController.swift in Sources */,
 				211F1F6820F7AFFC00DBAF46 /* AppDelegate.swift in Sources */,
 				215B0BC020F7CA7D00D9ED94 /* Button+Rx.swift in Sources */,
+				215B0BC820F9BE1700D9ED94 /* Playground.swift in Sources */,
 				211F1F7C20F7BF1500DBAF46 /* ApiRequest.swift in Sources */,
 				215B0BC420F7D7BB00D9ED94 /* UIViewController+extensions.swift in Sources */,
 				211F1F7E20F7C47200DBAF46 /* Facebook+Rx.swift in Sources */,

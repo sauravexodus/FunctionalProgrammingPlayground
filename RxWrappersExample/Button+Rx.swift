@@ -10,20 +10,20 @@ import Foundation
 import RxSwift
 import RxCocoa
 
-extension Button: HasDelegate {
-    public typealias Delegate = ButtonDelegate
+extension ClickableView: HasDelegate {
+    public typealias Delegate = ClickableViewDelegate
 }
 
-final class ButtonDelegateProxy: DelegateProxy<Button, ButtonDelegate>, DelegateProxyType, ButtonDelegate {
+final class ButtonDelegateProxy: DelegateProxy<ClickableView, ClickableViewDelegate>, DelegateProxyType, ClickableViewDelegate {
     static func registerKnownImplementations() {
         self.register { ButtonDelegateProxy(button: $0) }
     }
     
-    func onButtonTapped() {
+    func onTap() {
         onButtonTapBehaviorSubject.onNext(())
     }
     
-    weak private(set) var button: Button?
+    weak private(set) var button: ClickableView?
     
     init(button: ParentObject) {
         self.button = button
@@ -42,8 +42,8 @@ final class ButtonDelegateProxy: DelegateProxy<Button, ButtonDelegate>, Delegate
     }
 }
 
-extension Reactive where Base: Button {
-    var delegateProxy: DelegateProxy<Button, ButtonDelegate> {
+extension Reactive where Base: ClickableView {
+    var delegateProxy: DelegateProxy<ClickableView, ClickableViewDelegate> {
         return ButtonDelegateProxy(button: base)
     }
     
